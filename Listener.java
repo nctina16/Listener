@@ -20,7 +20,7 @@ public class Listener extends AbstractWebDriverEventListener {
 
         try {
             //save the screenshot taken in destination path
-            FileUtils.copyFile(file, new File("dean.png"));
+            FileUtils.copyFile(file, new File("nivetha.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
