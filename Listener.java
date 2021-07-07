@@ -25,8 +25,5 @@ public class Listener extends AbstractWebDriverEventListener {
             e.printStackTrace();
         }
         System.out.println("The screenshot is taken");
-
-        //wait for the page to load
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
     }
 }
