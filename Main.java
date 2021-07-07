@@ -6,9 +6,12 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class Main {
     public static void main(String[] args){
-       WebDriverManager.chromedriver().setup();
-        ChromeDriver driver = new ChromeDriver();
-        driver = new ChromeDriver();
+       //headless mode
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
+        WebDriverManager.chromedriver().setup();
+        ChromeDriver driver = new ChromeDriver(options);
         EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
 
         Listener listen = new Listener();
